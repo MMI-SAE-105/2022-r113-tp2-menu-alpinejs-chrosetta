@@ -15,6 +15,11 @@
       <button aria-controls="mainNav"menu></button>
       <button aria-controls="mainNav">menu</button>
       <button aria-controls="mainNav" @click="menuIsopen = ! menuIsOpen">
+      <button 
+        aria-controls="mainNav" 
+        @click="menuIsOpen= !menuIsOpen"
+        class="header menuBtn"
+      >
         menu
       </button>
       <button aria-controls="mainNav" @click="menuIsOpen= !menuIsOpen">menu</button>
@@ -22,6 +27,12 @@
       <nav id="mainNav">
       <nav id="mainNav" x-show="menuIsOpen">
       <nav id="mainNav" x-show="menuIsOpen" x-transition.duration.800ms>
+      <nav 
+        id="mainNav" 
+        x-show="menuIsOpen" 
+        x-transition.duration.800ms 
+        class="menu"
+      >
         <ul>
           <li><a href="#">item 1</a></li>
           <li><a href="#">item 2</a></li>
