@@ -1,6 +1,4 @@
 <!DOCTYPE html>
-<html lang="en">
-<html lang="fr" x-data="{menuIsOpen: false}">
 <html lang="fr" x-data="{menuIsOpen: false}":class="{noscroll:menuIsOpen,}">
   <head>
     <meta charset="UTF-8" />
@@ -29,22 +27,14 @@
     <!-- https://emmet.io/ -->
     <!-- header>h1{Test de menu} -->
     <header>
-      <button aria-controls="mainNav"menu></button>
-      <button aria-controls="mainNav">menu</button>
-      <button aria-controls="mainNav" @click="menuIsopen = ! menuIsOpen">
       <button 
         aria-controls="mainNav" 
         @click="menuIsOpen= !menuIsOpen"
-        class="header menuBtn"
         class="header__menuBtn"
       >
         menu
       </button>
-      <button aria-controls="mainNav" @click="menuIsOpen= !menuIsOpen">menu</button>
       <h1>Test de menu</h1>
-      <nav id="mainNav">
-      <nav id="mainNav" x-show="menuIsOpen">
-      <nav id="mainNav" x-show="menuIsOpen" x-transition.duration.800ms>
       <nav 
         id="mainNav" 
         x-show="menuIsOpen" 
@@ -54,7 +44,6 @@
         <ul>
           <li><a href="cats/index.html">Les chats</a>
           <ul>
-            <il><a href="chat-1.html">chat 1</a></il>
             <li><a href="chat-1.html">chat 1</a></il>
             <li><a href="chat-2.html">chat 2</a></il>
           </ul>
@@ -64,8 +53,6 @@
             <il><a href="chien-1.html">chien 1</a></il>
             <il><a href="chien-2.html">chien 2</a></il>
           </ul>
-          
-          <li><a href="#">item 3</a></li>
 
           <li><a>Public</a></li>
           <ul>
